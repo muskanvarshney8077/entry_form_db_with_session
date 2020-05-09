@@ -26,6 +26,10 @@ if(isset($_POST['name'])&&isset($_POST['phone_number'])&&isset($_POST['city'])&&
     $city=($_POST['city']);
     $country=($_POST['country']);
 	$email=($_POST['email']);
+	echo "</h2>Phone Number:-".$phone_number."</h2>"."</br>";
+	echo "</h2>City:-".$city."</h2>"."</br>";
+	echo "</h2>Country:-".$country."</h2>"."</br>";
+	echo "</h2>Email:-".$email."</h2>"."</br>";
     add_user($name,$phone_number,$city,$country,$email);
 }
 function add_user($n,$p,$c,$co,$e)
